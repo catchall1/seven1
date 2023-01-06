@@ -1290,49 +1290,7 @@ div#col-right-138 {
   </script>
 <script src="./test101_files/lander.js.изтеглен файл"></script>
 <div id="fb-root"></div>
-<script>
-window.addEventListener('load', function(){
-	(function(d, s, id){
-	  if($('.fbCommentsPlaceholder').size()>0){
-	   var js, fjs = d.getElementsByTagName(s)[0];
-	   if (d.getElementById(id)) {return;}
-	   js = d.createElement(s); js.id = id;
-	   js.src = "https://connect.facebook.net/en_US/sdk.js";
-	   fjs.parentNode.insertBefore(js, fjs);
-	  }
-	 }(document, 'script', 'facebook-jssdk'));
-});
- </script>
-<script>
-  window.cfFacebookInitOptions = {
-    appId            : 246441615530259,
-    autoLogAppEvents : false,
-    status           : true,
-    xfbml            : true,
-    version          : "v3.3"
-  };
-  window.fbAsyncInit = function() {
-    FB.init(window.cfFacebookInitOptions);
-  
-    // Iterates over all .fb-comments elements on the page, and renders them using the FB SDK.
-    // It only runs if we have not told the FB.init() to render XFBML on page load
-    var renderFacebookComments = function(renderXFBMLAtLoadTime) {
-      // If we have already marked XFBML to render at page load time, do not proceed.
-      if(renderXFBMLAtLoadTime) { return; }
-  
-      var comments = document.getElementsByClassName('fb-comments');
-      var i = 0;
-      var len = comments.length;
-      var comment = null;
-      for(; i < len; i++) {
-        comment = comments[i];
-        FB.XFBML.parse(comment.parentElement); // comments need to be rendered/parsed from their parent element.
-      }
-    }
-  
-    renderFacebookComments(true);
-  };
-</script>
+
 <!--[if lt IE 9]>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7/html5shiv.min.js"></script>
 <![endif]-->
@@ -1755,29 +1713,18 @@ window.addEventListener('load', function(){
         s.parentNode.insertBefore(cf, s);
       })();
     </script>
-<script type="text/javascript">function getURLParameter(e){return decodeURIComponent((RegExp(e+"=(.+?)(&|$)").exec(location.search)||[,null])[1])}function getURLParameterExact(e){for(var t=window.location.search.substring(1).split("&"),n=0;n<t.length;n++){var r=t[n].split("=");if(r[0]==e)return r[1]}}</script><script type="text/javascript">window.addEventListener("load",function(){$(function(){"null"!=getURLParameter("email")&&($('input[name="contact[email]"]').val(getURLParameterExact("email")),$("[name=email]").val(getURLParameterExact("email"))),"null"!=getURLParameter("name")&&($('input[name="contact[name]"]').val(getURLParameterExact("name")),$("[name=name]").val(getURLParameterExact("name"))),"null"!=getURLParameter("first_name")&&($('input[name="contact[first_name]"]').val(getURLParameter("first_name")),$("[name=first_name]").val(getURLParameter("first_name"))),"null"!=getURLParameter("last_name")&&($('input[name="contact[last_name]"]').val(getURLParameter("last_name")),$("[name=last_name]").val(getURLParameter("last_name"))),"null"!=getURLParameter("address_1")&&($('input[name="contact[address_1]"]').val(getURLParameter("address")),$("[name=address_1]").val(getURLParameter("address_1"))),"null"!=getURLParameter("address_2")&&($('input[name="contact[address_1]"]').val(getURLParameter("address")),$("[name=address_2]").val(getURLParameter("address_2"))),"null"!=getURLParameter("city")&&($('input[name="contact[city]"]').val(getURLParameter("city")),$("[name=city]").val(getURLParameter("city"))),"null"!=getURLParameter("state")&&($('input[name="contact[state]"]').val(getURLParameter("state")),$("[name=state]").val(getURLParameter("state"))),"null"!=getURLParameter("zip")&&($('input[name="contact[zip]"]').val(getURLParameter("zip")),$("[name=zip]").val(getURLParameter("zip"))),"null"!=getURLParameter("phone")&&($('input[name="contact[phone]"]').val(getURLParameter("phone")),$("[name=phone]").val(getURLParameter("phone")))})});</script>
 <script type="text/javascript" src="./test101_files/pushcrew.js.изтеглен файл" async="async"></script><meta name="can_calculate_taxes" content="false">
-<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-N5RJPMH"
-height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
 <script defer="" src="./test101_files/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon="{&quot;rayId&quot;:&quot;7853ada2e9a98ef2&quot;,&quot;token&quot;:&quot;405b708a9b0242e88fda34dc27903686&quot;,&quot;version&quot;:&quot;2022.11.3&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
 
 
 <iframe name="_hjRemoteVarsFrame" title="_hjRemoteVarsFrame" tabindex="-1" aria-hidden="true" id="_hjRemoteVarsFrame" src="./test101_files/box-5e66f98b4ee957db209dc6f63e3d59dd.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe><iframe id="_hjSafeContext_94915783" title="_hjSafeContext" tabindex="-1" aria-hidden="true" src="./test101_files/saved_resource.html" style="display: none !important; width: 1px !important; height: 1px !important; opacity: 0 !important; pointer-events: none !important;"></iframe>
-<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","943049363157238");fbq("track","PageView");</script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=943049363157238&amp;ev=PageView&amp;noscript=1"></noscript>
 
-<script type="text/javascript" id="">!function(a,b){var e="0071451cfd9f8d66a84abe557b1e97b854";if(a.obApi)b=function(d){return"[object Array]"===Object.prototype.toString.call(d)?d:[d]},a.obApi.marketerId=b(a.obApi.marketerId).concat(b(e));else{var c=a.obApi=function(){c.dispatch?c.dispatch.apply(c,arguments):c.queue.push(arguments)};c.version="1.1";c.loaded=!0;c.marketerId=e;c.queue=[];a=b.createElement("script");a.async=!0;a.src="//amplify.outbrain.com/cp/obtp.js";a.type="text/javascript";b=b.getElementsByTagName("script")[0];b.parentNode.insertBefore(a,
-b)}}(window,document);obApi("track","PAGE_VIEW");</script>
+
 <script type="text/javascript" id="" src="./test101_files/rev.js.изтеглен файл"></script>  
- <script type="text/javascript" id="">(function(){var a=document,b=window;b.MgSensorData=b.MgSensorData||[];b.MgSensorData.push({cid:697986,lng:"us",project:"a.adskeeper.co.uk"});b="a.adskeeper.co.uk";var c=a.getElementsByTagName("script")[0];a=a.createElement("script");a.type="text/javascript";a.async=!0;var d=Date.now?Date.now():(new Date).valueOf();a.src="https://"+b+"/mgsensor.js?d\x3d"+d;c.parentNode.insertBefore(a,c)})();</script>  
   
  
-	<script type="text/javascript" id="">!function(d,g,e){d.TiktokAnalyticsObject=e;var a=d[e]=d[e]||[];a.methods="page track identify instances debug on off once ready alias group enableCookie disableCookie".split(" ");a.setAndDefer=function(b,c){b[c]=function(){b.push([c].concat(Array.prototype.slice.call(arguments,0)))}};for(d=0;d<a.methods.length;d++)a.setAndDefer(a,a.methods[d]);a.instance=function(b){b=a._i[b]||[];for(var c=0;c<a.methods.length;c++)a.setAndDefer(b,a.methods[c]);return b};a.load=function(b,c){var f="https://analytics.tiktok.com/i18n/pixel/events.js";
-a._i=a._i||{};a._i[b]=[];a._i[b]._u=f;a._t=a._t||{};a._t[b]=+new Date;a._o=a._o||{};a._o[b]=c||{};c=document.createElement("script");c.type="text/javascript";c.async=!0;c.src=f+"?sdkid\x3d"+b+"\x26lib\x3d"+e;b=document.getElementsByTagName("script")[0];b.parentNode.insertBefore(c,b)};a.load("C8F94559481MCTU3OGOG");a.page()}(window,document,"ttq");</script>
 	
-<script type="text/javascript" id="">var _mpevt=_mpevt||[];(function(){var c="https:"==document.location.protocol?"https://static.trafficjunky.com/js/mp.min.js":"http://static.trafficjunky.com/js/mp.min.js",a=document,b=a.createElement("script");a=a.getElementsByTagName("script")[0];b.type="text/javascript";b.defer=!0;b.async=!0;b.src=c;a.parentNode.insertBefore(b,a)})();</script>
 
 <script type="text/javascript" id="">_mpevt.push(["SevenCells._event","SevenCellsCookie","1","5500"]);</script>
-<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","685198612790525");fbq("track","PageView");</script>
-<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=685198612790525&amp;ev=PageView&amp;noscript=1"></noscript>
 <meta name="p:domain_verify" content="e936bd27f7e7e5078174ccbdb8822e5b"><script src="./test101_files/cachedClickId"></script></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration><iframe id="__JSBridgeIframe_1.0__" title="jsbridge___JSBridgeIframe_1.0__" style="display: none;" src="./test101_files/saved_resource(1).html"></iframe><iframe id="__JSBridgeIframe_SetResult_1.0__" title="jsbridge___JSBridgeIframe_SetResult_1.0__" style="display: none;" src="./test101_files/saved_resource(2).html"></iframe><iframe id="__JSBridgeIframe__" title="jsbridge___JSBridgeIframe__" style="display: none;" src="./test101_files/saved_resource(3).html"></iframe><iframe id="__JSBridgeIframe_SetResult__" title="jsbridge___JSBridgeIframe_SetResult__" style="display: none;" src="./test101_files/saved_resource(4).html"></iframe></html>
