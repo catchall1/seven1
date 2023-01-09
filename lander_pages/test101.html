@@ -1626,24 +1626,7 @@ div#col-right-138 {
     <option value="Zambia">Zambia</option>
     <option value="Zimbabwe">Zimbabwe</option>
 </script>
-<script>
-      var page_key = 'he9rmmyjgcivvcy';
-      var fid = '12563568';
-      var fspos = '1';
-      var fvrs = '1';
-      var cf_tracker = cf_tracker || [];
-      (function() {
-        cf_key = 'ylqtzgfo';
-        page_key = 'he9rmmyjgcivvcy';
-        serverUrl = 'https://app.clickfunnels.com/v1/track';
-        var cf = document.createElement('script');
-        cf.type = 'text/javascript';
-        cf.async = true;
-        cf.src = 'https://app.clickfunnels.com/cf.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(cf, s);
-      })();
-    </script>
+
 <script type="text/javascript" src="./test101_files/pushcrew.js.изтеглен файл" async="async"></script><meta name="can_calculate_taxes" content="false">
 
 <script defer="" src="./test101_files/vaafb692b2aea4879b33c060e79fe94621666317369993" integrity="sha512-0ahDYl866UMhKuYcW078ScMalXqtFJggm7TmlUtp0UlD4eQk0Ixfnm5ykXKvGJNFjLMoortdseTfsRT8oCfgGA==" data-cf-beacon="{&quot;rayId&quot;:&quot;7853ada2e9a98ef2&quot;,&quot;token&quot;:&quot;405b708a9b0242e88fda34dc27903686&quot;,&quot;version&quot;:&quot;2022.11.3&quot;,&quot;si&quot;:100}" crossorigin="anonymous"></script>
@@ -1657,5 +1640,223 @@ div#col-right-138 {
  
 	
 
-<script type="text/javascript" id="">_mpevt.push(["SevenCells._event","SevenCellsCookie","1","5500"]);</script>
-<meta name="p:domain_verify" content="e936bd27f7e7e5078174ccbdb8822e5b"><script src="./test101_files/cachedClickId"></script></body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration><iframe id="__JSBridgeIframe_1.0__" title="jsbridge___JSBridgeIframe_1.0__" style="display: none;" src="./test101_files/saved_resource(1).html"></iframe><iframe id="__JSBridgeIframe_SetResult_1.0__" title="jsbridge___JSBridgeIframe_SetResult_1.0__" style="display: none;" src="./test101_files/saved_resource(2).html"></iframe><iframe id="__JSBridgeIframe__" title="jsbridge___JSBridgeIframe__" style="display: none;" src="./test101_files/saved_resource(3).html"></iframe><iframe id="__JSBridgeIframe_SetResult__" title="jsbridge___JSBridgeIframe_SetResult__" style="display: none;" src="./test101_files/saved_resource(4).html"></iframe></html>
+<meta name="p:domain_verify" content="e936bd27f7e7e5078174ccbdb8822e5b"><script src="./test101_files/cachedClickId"></script>
+	 <script type="text/javascript" id="ipl4t" data-controller="snippets--predefined-templates--fbq-uuid-to-sub-five-controller">
+    !function (f, b, e, v, n, t, s) {
+        if (f.fbq) return;
+        n = f.fbq = function () {
+            n.callMethod ?
+                n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+        };
+        if (!f._fbq) f._fbq = n;
+        n.push = n;
+        n.loaded = !0;
+        n.version = '2.0';
+        n.queue = [];
+        t = b.createElement(e);
+        t.async = !0;
+        t.src = v;
+        s = b.getElementsByTagName(e)[0];
+        s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+        ' https://connect.facebook.net/en_US/fbevents.js');
+ 
+    (function () {
+        try {
+            var rewriteDOM = function () {
+                Promise.resolve().then(function () {
+                    var uuidGen = function () {
+                        return ([1e7] + -1e3 + -4e3 + -8e3 + -1e11).replace(/[018]/g, c =>
+                            (
+                                c ^
+                                (crypto.getRandomValues(new Uint8Array(1))[0] & (15 >> (c / 4)))
+                            ).toString(16)
+                        );
+                    };
+                    var uuid = uuidGen();
+                    var options = {
+                        external_id: uuid
+                    }
+                    if (typeof fbq != 'undefined' && fbq) {
+                        fbq('init', '3431956330382088', options);
+                        fbq('track', 'PageView', options);
+                    } else {
+                        console.log('[params rewriting] no fbq pixel source to init');
+                    }
+                    var addParamsToUrl = function (url) {
+                        return params =>
+                            url + (url.indexOf("?") !== -1 ? "&" : "?") + params.substr(1);
+                    };
+ 
+                    var leadFormComponents = document.querySelectorAll("[data-controller=lead-forms--component]");
+                    var pageLinks = document.querySelectorAll("a");
+                    var forms = document.querySelectorAll("form");
+                    var answers = document.querySelectorAll(".button.answer[onclick]")
+                    var redirectableEl = document.querySelectorAll("[data-redirect]");
+                    var newTabRedirectableEl = document.querySelectorAll("[data-new-tab-redirect]");
+		    var nread =  document.querySelectorAll("[data-controller=link-redirect]");
+
+ 
+                    console.log('leadFormComponents', leadFormComponents)
+                    console.log('forms', forms)
+                    window.addEventListener('DOMContentLoaded', (event) => {
+                        console.log('DOM fully loaded and parsed');
+                        console.log("dom ready leadform", document.querySelectorAll("[data-controller=lead-forms--component]"))
+			});
+
+		
+                    Array.from(leadFormComponents).forEach(leadFormComponent => {
+                        var submitRedirectAttr = 'data-lead-forms--component-submit-redirect-url-value'
+                        var popupRedirectAttr = 'data-lead-forms--component-submit-popup-url-value'
+                        var redirectLink = leadFormComponent.getAttribute(submitRedirectAttr)
+                        var popupRedirect = leadFormComponent.getAttribute(popupRedirectAttr)
+                        if (redirectLink) leadFormComponent.setAttribute(submitRedirectAttr, addParamsToUrl(redirectLink)("&sub5=" + uuid));
+                        if (popupRedirect) leadFormComponent.setAttribute(popupRedirectAttr, addParamsToUrl(popupRedirect)("&sub5=" + uuid));
+                    })
+                    Array.from(forms).forEach(form => {
+                        var redirect_link = form.getAttribute('redirect_link')
+                        var new_tab_redirect_link = form.getAttribute('new_tab_redirect_link')
+                        if (redirect_link) form.setAttribute('redirect_link', addParamsToUrl(redirect_link)("&sub5=" + uuid));
+                        if (new_tab_redirect_link) form.setAttribute('new_tab_redirect_link', addParamsToUrl(new_tab_redirect_link)("&sub5=" + uuid));
+                    })
+                    Array.from(redirectableEl).forEach(form => {
+                        var redirect_link = form.getAttribute('data-redirect')
+                        if (redirect_link) form.setAttribute('data-redirect', addParamsToUrl(redirect_link)("&sub5=" + uuid));
+									    })
+                    Array.from(nread).forEach(form => {
+                        var redirect_link = form.getAttribute('data-link-redirect-current-tab-url-value')
+                        if (redirect_link) form.setAttribute('data-link-redirect-current-tab-url-value', addParamsToUrl(redirect_link)("&sub5=" + uuid));
+                    })									    
+                    Array.from(newTabRedirectableEl).forEach(form => {
+                        var new_tab_redirect_link = form.getAttribute('data-new-tab-redirect')
+                        if (new_tab_redirect_link) form.setAttribute('data-new-tab-redirect', addParamsToUrl(new_tab_redirect_link)("&sub5=" + uuid));
+                    })
+                    var extractUrlFromHandler = (clickHandlerStr) => {
+                        return clickHandlerStr.slice(clickHandlerStr.indexOf('https'), clickHandlerStr.lastIndexOf("'"));
+                    }
+                    var extractEverythingBeforeUrl = (clickHandlerStr) => {
+                        return clickHandlerStr.slice(0, clickHandlerStr.indexOf('https'))
+                    }
+                    var extractEverythingAfterUrl = (clickHandlerStr) => {
+                        return clickHandlerStr.slice(clickHandlerStr.lastIndexOf("'"), clickHandlerStr.length)
+                    }
+                    var formatNewHandler = (oldHandlerStr, url) => {
+                        return `${extractEverythingBeforeUrl(oldHandlerStr)}${url}${extractEverythingAfterUrl(oldHandlerStr)}`
+                    }
+                    Array.from(answers).forEach(answer => {
+                        var clickHandlerStr = answer.getAttribute("onclick")
+                        if (extractUrlFromHandler(clickHandlerStr)) {
+                            parsedUrl = addParamsToUrl(extractUrlFromHandler(clickHandlerStr))("&sub5=" + uuid)
+                            answer.setAttribute('onclick', formatNewHandler(clickHandlerStr, parsedUrl))
+                        }
+                    })
+                    Array.from(pageLinks).forEach(link => {
+                        var href = link.href;
+                        if (href) link.href = addParamsToUrl(href)("&sub5=" + uuid);
+                    });
+ 
+                    function getMetaValue(name) {
+                        const element = document?.head?.querySelector(`meta[name="${name}"]`)
+                        return element?.getAttribute("content")
+                    }
+ 
+                    function saveToLS(key, value) {
+                        return new Promise((resolve, reject) => {
+                            try {
+                                localStorage.setItem(key, JSON.stringify(value))
+                                const results = JSON.parse(localStorage.getItem(key))
+                                resolve(results)
+                            } catch (error) {
+                                reject(error)
+                            }
+                        })
+                    }
+ 
+                    saveToLS("fb_sub_five", uuid).then(() => {
+                        window.dispatchEvent(new Event("storage"))
+                        console.log('teststorage')
+                    })
+                });
+            }
+            if (document && document.readyState && document.readyState === "complete") {
+                rewriteDOM()
+            } else {
+                window.addEventListener("DOMContentLoaded", () => {
+                    rewriteDOM()
+                });
+            }
+        } catch (e) {
+            console.log('[params rewriting] ERROR', e)
+        }
+    }())
+</script>
+	
+<script type='text/javascript'>
+    Promise.resolve().then(function() {
+        var addParamsToUrl = function(url) {
+            return params =>
+                url + (url.indexOf("?") !== -1 ? "&" : "?") + params.substr(1);
+        };
+ 
+        var addCurrentParamsToUrl = function (url) {
+          const currentParams = window.location.search
+          return addParamsToUrl(url)(currentParams)
+        }
+ 
+        var leadFormComponents = document.querySelectorAll("[data-controller=lead-forms--component]");
+        var pageLinks = document.querySelectorAll("a");
+        var forms = document.querySelectorAll("form");
+        var answers = document.querySelectorAll(".button.answer[onclick]")
+        var redirectableEl = document.querySelectorAll("[data-redirect]");
+        var newTabRedirectableEl = document.querySelectorAll("[data-new-tab-redirect]");
+ 
+        var setParams = (currentUrl) => addCurrentParamsToUrl(currentUrl);
+        Array.from(pageLinks).forEach(link => {
+            var href = link.href;
+            link.href = setParams(href);
+        });
+        Array.from(leadFormComponents).forEach(leadFormComponent => {
+            var submitRedirectAttr = 'data-lead-forms--component-submit-redirect-url-value'
+            var popupRedirectAttr = 'data-lead-forms--component-submit-popup-url-value'
+            var redirectLink = leadFormComponent.getAttribute(submitRedirectAttr)
+            var popupRedirect = leadFormComponent.getAttribute(popupRedirectAttr)
+            if (redirectLink) leadFormComponent.setAttribute(submitRedirectAttr, setParams(redirectLink));
+            if (popupRedirect) leadFormComponent.setAttribute(popupRedirectAttr, setParams(popupRedirect));
+        })
+        Array.from(forms).forEach(form => {
+            var redirectLink = form.getAttribute('redirect_link')
+            var newTabRedirectLink = form.getAttribute('new_tab_redirect_link')
+            if (redirectLink) form.setAttribute('redirect_link', setParams(redirectLink));
+            if (newTabRedirectLink) form.setAttribute('new_tab_redirect_link', setParams(newTabRedirectLink));
+        })
+        Array.from(redirectableEl).forEach(form => {
+            var redirectLink = form.getAttribute('data-redirect')
+            if (redirectLink) form.setAttribute('data-redirect', setParams(redirectLink));
+        })
+        Array.from(newTabRedirectableEl).forEach(form => {
+            var newTabRedirectLink = form.getAttribute('data-new-tab-redirect')
+            if (newTabRedirectLink) form.setAttribute('data-new-tab-redirect', setParams(newTabRedirectLink));
+        })
+        var extractUrlFromHandler = (clickHandlerStr) => {
+            return clickHandlerStr.slice(clickHandlerStr.indexOf('https'), clickHandlerStr.lastIndexOf("'"));
+        }
+        var extractEverythingBeforeUrl = (clickHandlerStr) => {
+            return clickHandlerStr.slice(0, clickHandlerStr.indexOf('https'))
+        }
+        var extractEverythingAfterUrl = (clickHandlerStr) => {
+            return clickHandlerStr.slice(clickHandlerStr.lastIndexOf("'"), clickHandlerStr.length)
+        }
+        var formatNewHandler = (oldHandlerStr, url) => {
+            return `${extractEverythingBeforeUrl(oldHandlerStr)}${url}${extractEverythingAfterUrl(oldHandlerStr)}`
+        }
+        Array.from(answers).forEach(answer => {
+            var clickHandlerStr = answer.getAttribute("onclick")
+            if (extractUrlFromHandler(clickHandlerStr)) {
+                var parsedUrl = setParams(clickHandlerStr)
+                answer.setAttribute('onclick', formatNewHandler(clickHandlerStr, parsedUrl))
+            }
+        })
+ 
+    });
+</script>
+	</body><grammarly-desktop-integration data-grammarly-shadow-root="true"></grammarly-desktop-integration><iframe id="__JSBridgeIframe_1.0__" title="jsbridge___JSBridgeIframe_1.0__" style="display: none;" src="./test101_files/saved_resource(1).html"></iframe><iframe id="__JSBridgeIframe_SetResult_1.0__" title="jsbridge___JSBridgeIframe_SetResult_1.0__" style="display: none;" src="./test101_files/saved_resource(2).html"></iframe><iframe id="__JSBridgeIframe__" title="jsbridge___JSBridgeIframe__" style="display: none;" src="./test101_files/saved_resource(3).html"></iframe><iframe id="__JSBridgeIframe_SetResult__" title="jsbridge___JSBridgeIframe_SetResult__" style="display: none;" src="./test101_files/saved_resource(4).html"></iframe></html>
